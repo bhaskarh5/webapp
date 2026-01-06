@@ -4,7 +4,7 @@ A full-stack web application that analyzes medical reports and provides instant 
 
 ## 🌐 Live Demo
 
-**Frontend:** [https://welcome-all-html.web.app](https://welcome-all-html.web.app)
+**Frontend:** [https://test7-6b21a.web.app](https://test7-6b21a.web.app)
 
 **Backend API:** [https://webapp-yqvj.onrender.com](https://webapp-yqvj.onrender.com)
 
@@ -54,7 +54,7 @@ A full-stack web application that analyzes medical reports and provides instant 
 
 ### Using the Live App
 
-1. Visit [https://welcome-all-html.web.app](https://welcome-all-html.web.app)
+1. Visit [https://test7-6b21a.web.app](https://test7-6b21a.web.app)
 2. Upload a medical report (PDF, PNG, or JPG)
 3. Click "Upload" and wait for analysis
 4. View detailed results with recommendations
