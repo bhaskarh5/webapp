@@ -451,6 +451,8 @@
             successMessage.style.display = 'none';
         }
 
+        const API_BASE = 'https://webapp-yqvj.onrender.com';
+
         async function uploadFile() {
             if (selectedFiles.length === 0) {
                 showError('Please select a file first');
@@ -465,7 +467,7 @@
                 successMessage.style.display = 'block';
                 errorMessage.style.display = 'none';
 
-                const response = await fetch('/upload', {
+                const response = await fetch(`${API_BASE}/upload`, {
                     method: 'POST',
                     body: formData
                 });
@@ -482,7 +484,7 @@
                 if (data.analysis) {
                     const queryData = encodeURIComponent(JSON.stringify(data));
                     setTimeout(() => {
-                        window.location.href = '/results?data=' + queryData;
+                        window.location.href = `/results?data=${queryData}`;
                     }, 1500);
                 }
             } catch (error) {
