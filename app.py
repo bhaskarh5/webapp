@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify, send_file, render_template_string
+from flask_cors import CORS
 from werkzeug.utils import secure_filename
 import os
 import PyPDF2
@@ -186,6 +187,8 @@ def analyze_medical_values(values):
     return analysis
 
 app = Flask(__name__)
+# Allow cross-origin requests from frontend (Firebase hosting) to Render backend
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Configuration
 UPLOAD_FOLDER = 'medical_reports'
